@@ -15,4 +15,7 @@ after_success:
  - docker build -t greendevops/multi-worker ./worker
 
  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
- - docker push greendevops/multi-client greendevops/multi-nginx greendevops/multi-server greendevops/multi-worker
+ - docker push greendevops/multi-client
+ - docker push greendevops/multi-nginx
+ - docker push greendevops/multi-server
+ - docker push greendevops/multi-worker
