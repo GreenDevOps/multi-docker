@@ -3,7 +3,7 @@
 	"containerDefinitions": [
 		{
 			"name": "client",
-			"image": "reendevops/multi-client",
+			"image": "greendevops/multi-client",
 			"hostname": "client",
 			"essential": false,
 			"memory": 128
